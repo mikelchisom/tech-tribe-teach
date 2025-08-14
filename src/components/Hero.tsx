@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import heroImage from "@/assets/hero-tech-learning.jpg";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
@@ -17,11 +18,11 @@ export const Hero = () => {
                 Skills for the Future
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Learn programming, web development, and cutting-edge technologies 
+                Learn programming, web development, and cutting-edge technologies
                 through interactive courses designed by industry experts.
               </p>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="lg" className="group">
                 Start Learning Free
@@ -32,7 +33,7 @@ export const Hero = () => {
                 Watch Demo
               </Button>
             </div>
-            
+
             <div className="flex items-center space-x-8 text-sm text-muted-foreground">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-primary rounded-full"></div>
@@ -47,13 +48,31 @@ export const Hero = () => {
                 <span>Expert Instructors</span>
               </div>
             </div>
+
+            <div className="flex gap-4 mt-4">
+              <Link to="/login">
+                <button
+                  style={{
+                    fontWeight: "bold",
+                    padding: "0.75rem 1.5rem",
+                    borderRadius: "8px",
+                    background: "#28a745",
+                    color: "#fff",
+                    border: "none",
+                    cursor: "pointer",
+                  }}
+                >
+                  Sign In
+                </button>
+              </Link>
+            </div>
           </div>
-          
+
           <div className="relative">
             <div className="relative z-10">
-              <img 
-                src={heroImage} 
-                alt="Technology Learning Platform" 
+              <img
+                src={heroImage}
+                alt="Technology Learning Platform"
                 className="w-full h-auto rounded-2xl shadow-card transform hover:scale-105 transition-transform duration-500"
               />
             </div>

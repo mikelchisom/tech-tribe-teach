@@ -4,7 +4,7 @@ import { FeaturedCourses } from "@/components/FeaturedCourses";
 import { Features } from "@/components/Features";
 import { Footer } from "@/components/Footer";
 
-const Index = () => {
+export default function Index() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -15,5 +15,3 @@ const Index = () => {
     </div>
   );
 };
-
-export default Index;

@@ -10,7 +10,7 @@ export const Footer = () => {
             <div className="flex items-center space-x-2">
               <Code className="h-8 w-8 text-primary" />
               <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                TechLearn
+                Edel Tech City
               </span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -29,6 +29,9 @@ export const Footer = () => {
               <Button variant="ghost" size="icon" className="h-8 w-8">
                 <Mail className="h-4 w-4" />
               </Button>
+            </div>
+            <div className="mt-4 text-sm text-muted-foreground">
+              Contact: <a href="mailto:edeltechcity@outlook.com" className="underline">edeltechcity@outlook.com</a>
             </div>
           </div>
           
